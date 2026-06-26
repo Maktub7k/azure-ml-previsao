@@ -73,7 +73,15 @@ Foram realizados testes utilizando o endpoint criado para verificar o funcioname
 
 O arquivo `endpoint.json` contém a configuração do endpoint implantado no Azure Machine Learning.
 
----
+{
+  "name": "previsao-endpoint",
+  "authMode": "key",
+  "location": "brazilsouth",
+  "properties": {
+    "scoringUri": "https://<endpoint>.inference.ml.azure.com/score",
+    "provisioningState": "Succeeded"
+  }
+}
 
 ## Resultados
 
